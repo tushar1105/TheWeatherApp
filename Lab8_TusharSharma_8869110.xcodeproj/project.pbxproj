@@ -13,6 +13,8 @@
 		D6853B932C600FFF00B89912 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D6853B922C600FFF00B89912 /* Base */; };
 		D6853B952C60100100B89912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6853B942C60100100B89912 /* Assets.xcassets */; };
 		D6853B982C60100100B89912 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D6853B972C60100100B89912 /* Base */; };
+		D6853BA02C60100D00B89912 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6853B9F2C60100D00B89912 /* WeatherAPI.swift */; };
+		D6853BA22C60104100B89912 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6853BA12C60104100B89912 /* APICall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		D6853B942C60100100B89912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6853B972C60100100B89912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6853B992C60100100B89912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6853B9F2C60100D00B89912 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		D6853BA12C60104100B89912 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		D6853BA72C60303000B89912 /* READ-ME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "READ-ME.md"; path = "Lab8_TusharSharma_8869110/READ-ME.md"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +61,50 @@
 		D6853B8A2C600FFF00B89912 /* Lab8_TusharSharma_8869110 */ = {
 			isa = PBXGroup;
 			children = (
-				D6853B8B2C600FFF00B89912 /* AppDelegate.swift */,
-				D6853B8D2C600FFF00B89912 /* SceneDelegate.swift */,
-				D6853B8F2C600FFF00B89912 /* ViewController.swift */,
-				D6853B912C600FFF00B89912 /* Main.storyboard */,
-				D6853B942C60100100B89912 /* Assets.xcassets */,
-				D6853B962C60100100B89912 /* LaunchScreen.storyboard */,
+				D6853BA72C60303000B89912 /* READ-ME.md */,
+				D6853BA62C60300300B89912 /* Utilities */,
+				D6853BA32C602FD400B89912 /* Model */,
+				D6853BA42C602FE600B89912 /* Controller */,
+				D6853BA52C602FF600B89912 /* View */,
 				D6853B992C60100100B89912 /* Info.plist */,
 			);
 			path = Lab8_TusharSharma_8869110;
+			sourceTree = "<group>";
+		};
+		D6853BA32C602FD400B89912 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6853BA12C60104100B89912 /* APICall.swift */,
+				D6853B9F2C60100D00B89912 /* WeatherAPI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6853BA42C602FE600B89912 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6853B8F2C600FFF00B89912 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6853BA52C602FF600B89912 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6853B912C600FFF00B89912 /* Main.storyboard */,
+				D6853B962C60100100B89912 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6853BA62C60300300B89912 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D6853B8B2C600FFF00B89912 /* AppDelegate.swift */,
+				D6853B8D2C600FFF00B89912 /* SceneDelegate.swift */,
+				D6853B942C60100100B89912 /* Assets.xcassets */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6853B902C600FFF00B89912 /* ViewController.swift in Sources */,
+				D6853BA02C60100D00B89912 /* WeatherAPI.swift in Sources */,
+				D6853BA22C60104100B89912 /* APICall.swift in Sources */,
 				D6853B8C2C600FFF00B89912 /* AppDelegate.swift in Sources */,
 				D6853B8E2C600FFF00B89912 /* SceneDelegate.swift in Sources */,
 			);
@@ -307,9 +349,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Conestoga-College.Lab8-TusharSharma-8869110";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,9 +381,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Conestoga-College.Lab8-TusharSharma-8869110";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
