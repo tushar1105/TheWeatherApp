@@ -1,4 +1,4 @@
-# READ-ME: The Weather App iOS App - Tushar Sharma(8869110)
+# READ-ME: The Weather App iOS App - Tushar Sharma
 
 ## Application Overview
 
